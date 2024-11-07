@@ -1,0 +1,45 @@
+<Project>
+
+  <PropertyGroup>
+    <NeutralLanguage>pt-BR</NeutralLanguage>
+    <Authors>Felipe Baltazar</Authors>
+    <PackageProjectUrl>https://github.com/felipebaltazar/Maui.CommunityToolkitTabView</PackageProjectUrl>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageIcon>icon.png</PackageIcon>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <IncludeSymbols>True</IncludeSymbols>
+    <IncludeSource>True</IncludeSource>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/felipebaltazar/Maui.CommunityToolkitTabView</RepositoryUrl>
+    <CommunityToolkitTabViewPackageIcon>$(MSBuildThisFileDirectory)icon.png</CommunityToolkitTabViewPackageIcon>
+    <CommunityToolkitTabViewLicenseFile>$(MSBuildThisFileDirectory)LICENSE</CommunityToolkitTabViewLicenseFile>
+    <PackageTags>CommunityToolkitTabView;maui;dotnet-maui;xaml;ios;android;server;tabview;ui</PackageTags>
+    <Copyright>Copyright Felipe Baltazar 2024</Copyright>
+    <Description>
+      TabView compat version to migrate xamarin apps to maui.
+    </Description>
+  </PropertyGroup>
+
+
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)$(PackageReadmeFile)"
+          Visible="False"
+          Pack="True"
+          PackagePath="" />
+    <None Include="$(CommunityToolkitTabViewPackageIcon)"
+          Visible="False"
+          Pack="True"
+          PackagePath="" />
+    <None Include="$(CommunityToolkitTabViewLicenseFile)"
+          Visible="False"
+          Pack="True"
+          PackagePath="" />
+    <SourceRoot Include="$(MSBuildThisFileDirectory)" />
+    <PackageReference Include="Nerdbank.GitVersioning" 
+                      Version="3.5.107"
+                      PrivateAssets="all" />
+  </ItemGroup>
+
+
+</Project>

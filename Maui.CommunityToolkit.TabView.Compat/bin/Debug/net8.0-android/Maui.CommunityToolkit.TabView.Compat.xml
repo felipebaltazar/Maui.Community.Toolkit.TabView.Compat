@@ -1,0 +1,278 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Maui.CommunityToolkit.TabView.Compat</name>
+    </assembly>
+    <members>
+        <member name="T:Maui.CommunityToolkit.TabView.Compat.BadgeAnimation">
+            <summary>
+            This is the default animation that is used when the <see cref="P:Maui.CommunityToolkit.TabView.Compat.BadgeView.IsAnimated"/> is set to true.
+            </summary>
+        </member>
+        <member name="M:Maui.CommunityToolkit.TabView.Compat.BadgeAnimation.OnAppearing(Microsoft.Maui.Controls.View)">
+            <summary>
+            With the <see cref="M:Maui.CommunityToolkit.TabView.Compat.BadgeAnimation.OnAppearing(Microsoft.Maui.Controls.View)"/> method you can influence the animation that is used when the <see cref="T:Maui.CommunityToolkit.TabView.Compat.BadgeView"/> appears.
+            </summary>
+            <param name="badgeView">The <see cref="T:Maui.CommunityToolkit.TabView.Compat.BadgeView"/> instance on which the animation will be applied</param>
+            <returns>An awaitable <see cref="T:System.Threading.Tasks.Task"/></returns>
+        </member>
+        <member name="M:Maui.CommunityToolkit.TabView.Compat.BadgeAnimation.OnDisappering(Microsoft.Maui.Controls.View)">
+            <summary>
+            With the <see cref="M:Maui.CommunityToolkit.TabView.Compat.BadgeAnimation.OnDisappering(Microsoft.Maui.Controls.View)"/> method you can influence the animation that is used when the <see cref="T:Maui.CommunityToolkit.TabView.Compat.BadgeView"/> disappears.
+            </summary>
+            <param name="badgeView">The <see cref="T:Maui.CommunityToolkit.TabView.Compat.BadgeView"/> instance on which the animation will be applied</param>
+            <returns>An awaitable <see cref="T:System.Threading.Tasks.Task"/></returns>
+        </member>
+        <member name="T:Maui.CommunityToolkit.TabView.Compat.BadgePosition">
+            <summary>
+            Determines the position where the badge will be shown on top of <see cref="P:Maui.CommunityToolkit.TabView.Compat.BadgeView.Content"/>.
+            </summary>
+        </member>
+        <member name="T:Maui.CommunityToolkit.TabView.Compat.BadgeView">
+            <summary>
+            The <see cref="T:Maui.CommunityToolkit.TabView.Compat.BadgeView"/> allows the user to show a badge with a string value on top of any control. By wrapping a control in a <see cref="T:Maui.CommunityToolkit.TabView.Compat.BadgeView"/> control, you can show a badge value on top of it. This is very much like the badges you see on the app icons on iOS and Android.
+            </summary>
+        </member>
+        <member name="F:Maui.CommunityToolkit.TabView.Compat.BadgeView.ContentProperty">
+            <summary>
+            Backing BindableProperty for the <see cref="P:Maui.CommunityToolkit.TabView.Compat.BadgeView.Content"/> property.
+            </summary>
+        </member>
+        <member name="P:Maui.CommunityToolkit.TabView.Compat.BadgeView.Content">
+            <summary>
+            Gets or sets the <see cref="T:Microsoft.Maui.Controls.View"/> on top of which the <see cref="T:Maui.CommunityToolkit.TabView.Compat.BadgeView"/> will be shown. This is a bindable property.
+            </summary>
+        </member>
+        <member name="F:Maui.CommunityToolkit.TabView.Compat.BadgeView.BadgePositionProperty">
+            <summary>
+            Backing BindableProperty for the <see cref="P:Maui.CommunityToolkit.TabView.Compat.BadgeView.BadgePosition"/> property.
+            </summary>
+        </member>
+        <member name="P:Maui.CommunityToolkit.TabView.Compat.BadgeView.BadgePosition">
+            <summary>
+            Determines the position where the badge will be shown on top of <see cref="P:Maui.CommunityToolkit.TabView.Compat.BadgeView.Content"/>. This is a bindable property.
+            </summary>
+        </member>
+        <member name="F:Maui.CommunityToolkit.TabView.Compat.BadgeView.AutoHideProperty">
+            <summary>
+            Backing BindableProperty for the <see cref="P:Maui.CommunityToolkit.TabView.Compat.BadgeView.AutoHide"/> property.
+            </summary>
+        </member>
+        <member name="P:Maui.CommunityToolkit.TabView.Compat.BadgeView.AutoHide">
+            <summary>
+            Determines whether or not the badge is automatically hidden when the <see cref="P:Maui.CommunityToolkit.TabView.Compat.BadgeView.Text"/> is set to 0. This is a bindable property.
+            </summary>
+        </member>
+        <member name="F:Maui.CommunityToolkit.TabView.Compat.BadgeView.IsAnimatedProperty">
+            <summary>
+            Backing BindableProperty for the <see cref="P:Maui.CommunityToolkit.TabView.Compat.BadgeView.IsAnimated"/> property.
+            </summary>
+        </member>
+        <member name="P:Maui.CommunityToolkit.TabView.Compat.BadgeView.IsAnimated">
+            <summary>
+            Determines if an animation is used when the badge is shown or hidden. This is a bindable property.
+            </summary>
+        </member>
+        <member name="F:Maui.CommunityToolkit.TabView.Compat.BadgeView.BadgeAnimationProperty">
+            <summary>
+            Backing BindableProperty for the <see cref="P:Maui.CommunityToolkit.TabView.Compat.BadgeView.BadgeAnimation"/> property.
+            </summary>
+        </member>
+        <member name="P:Maui.CommunityToolkit.TabView.Compat.BadgeView.BadgeAnimation">
+            <summary>
+            Gets or sets the animation that is used when the badge is shown or hidden. The animation only shows when <see cref="P:Maui.CommunityToolkit.TabView.Compat.BadgeView.IsAnimated"/> is set to true. This is a bindable property.
+            </summary>
+        </member>
+        <member name="F:Maui.CommunityToolkit.TabView.Compat.BadgeView.BackgroundColorProperty">
+            <summary>
+            Backing BindableProperty for the <see cref="P:Maui.CommunityToolkit.TabView.Compat.BadgeView.BackgroundColor"/> property.
+            </summary>
+        </member>
+        <member name="P:Maui.CommunityToolkit.TabView.Compat.BadgeView.BackgroundColor">
+            <summary>
+            Gets or sets the background <see cref="T:Microsoft.Maui.Graphics.Color"/> of the badge. This is a bindable property.
+            </summary>
+        </member>
+        <member name="F:Maui.CommunityToolkit.TabView.Compat.BadgeView.BorderColorProperty">
+            <summary>
+            Backing BindableProperty for the <see cref="P:Maui.CommunityToolkit.TabView.Compat.BadgeView.BorderColor"/> property.
+            </summary>
+        </member>
+        <member name="P:Maui.CommunityToolkit.TabView.Compat.BadgeView.BorderColor">
+            <summary>
+            Gets or sets the border <see cref="T:Microsoft.Maui.Graphics.Color"/> of the badge. This is a bindable property.
+            </summary>
+        </member>
+        <member name="F:Maui.CommunityToolkit.TabView.Compat.BadgeView.CornerRadiusProperty">
+            <summary>
+            Backing BindableProperty for the <see cref="P:Maui.CommunityToolkit.TabView.Compat.BadgeView.CornerRadius"/> property.
+            </summary>
+        </member>
+        <member name="P:Maui.CommunityToolkit.TabView.Compat.BadgeView.CornerRadius">
+            <summary>
+            Gets or sets the corner radius of the <see cref="T:Maui.CommunityToolkit.TabView.Compat.BadgeView"/>. This is a bindable property.
+            </summary>
+        </member>
+        <member name="F:Maui.CommunityToolkit.TabView.Compat.BadgeView.HasShadowProperty">
+            <summary>
+            Backing BindableProperty for the <see cref="P:Maui.CommunityToolkit.TabView.Compat.BadgeView.HasShadow"/> property.
+            </summary>
+        </member>
+        <member name="P:Maui.CommunityToolkit.TabView.Compat.BadgeView.HasShadow">
+            <summary>
+            Enabled or disables a shadow being shown behind the <see cref="T:Maui.CommunityToolkit.TabView.Compat.BadgeView"/>. This is a bindable property.
+            </summary>
+        </member>
+        <member name="F:Maui.CommunityToolkit.TabView.Compat.BadgeView.TextColorProperty">
+            <summary>
+            Backing BindableProperty for the <see cref="P:Maui.CommunityToolkit.TabView.Compat.BadgeView.TextColor"/> property.
+            </summary>
+        </member>
+        <member name="P:Maui.CommunityToolkit.TabView.Compat.BadgeView.TextColor">
+            <summary>
+            Gets or sets the <see cref="T:Microsoft.Maui.Graphics.Color"/> or the test shown in  the <see cref="T:Maui.CommunityToolkit.TabView.Compat.BadgeView"/>. This is a bindable property.
+            </summary>
+        </member>
+        <member name="F:Maui.CommunityToolkit.TabView.Compat.BadgeView.TextProperty">
+            <summary>
+            Backing BindableProperty for the <see cref="P:Maui.CommunityToolkit.TabView.Compat.BadgeView.Text"/> property.
+            </summary>
+        </member>
+        <member name="P:Maui.CommunityToolkit.TabView.Compat.BadgeView.Text">
+            <summary>
+            Text that is shown on the <see cref="T:Maui.CommunityToolkit.TabView.Compat.BadgeView"/>. Set this property to 0 and <see cref="P:Maui.CommunityToolkit.TabView.Compat.BadgeView.AutoHide"/> to true, to make the badge disappear automatically. This is a bindable property.
+            </summary>
+        </member>
+        <member name="F:Maui.CommunityToolkit.TabView.Compat.BadgeView.FontSizeProperty">
+            <summary>
+            Backing BindableProperty for the <see cref="P:Maui.CommunityToolkit.TabView.Compat.BadgeView.FontSize"/> property.
+            </summary>
+        </member>
+        <member name="P:Maui.CommunityToolkit.TabView.Compat.BadgeView.FontSize">
+            <summary>
+            Font size of all the text on the <see cref="T:Maui.CommunityToolkit.TabView.Compat.BadgeView" />. <see cref="T:Microsoft.Maui.Controls.NamedSize" /> values can be used. This is a bindable property.
+            </summary>
+        </member>
+        <member name="F:Maui.CommunityToolkit.TabView.Compat.BadgeView.FontFamilyProperty">
+            <summary>
+            Backing BindableProperty for the <see cref="P:Maui.CommunityToolkit.TabView.Compat.BadgeView.FontFamily"/> property.
+            </summary>
+        </member>
+        <member name="P:Maui.CommunityToolkit.TabView.Compat.BadgeView.FontFamily">
+            <summary>
+            Font of the text on the <see cref="T:Maui.CommunityToolkit.TabView.Compat.BadgeView" />. This is a bindable property.
+            </summary>
+        </member>
+        <member name="F:Maui.CommunityToolkit.TabView.Compat.BadgeView.FontAttributesProperty">
+            <summary>
+            Backing BindableProperty for the <see cref="P:Maui.CommunityToolkit.TabView.Compat.BadgeView.FontAttributes"/> property.
+            </summary>
+        </member>
+        <member name="P:Maui.CommunityToolkit.TabView.Compat.BadgeView.FontAttributes">
+            <summary>
+            Font attributes of all the text on the <see cref="T:Maui.CommunityToolkit.TabView.Compat.BadgeView" />. This is a bindable property.
+            </summary>
+        </member>
+        <member name="M:Maui.CommunityToolkit.TabView.Compat.BaseTemplatedView`1.#ctor">
+            <summary>
+            Constructor of <see cref="T:Maui.CommunityToolkit.TabView.Compat.BaseTemplatedView`1" />
+            </summary>
+        </member>
+        <member name="T:Maui.CommunityToolkit.TabView.Compat.BaseLazyView">
+            <summary>
+            Abstract base class for <see cref="T:Maui.CommunityToolkit.TabView.Compat.LazyView`1"/>
+            </summary>
+        </member>
+        <member name="F:Maui.CommunityToolkit.TabView.Compat.BaseLazyView.IsLoadedProperty">
+            <summary>
+            This is a read-only <see cref="T:Microsoft.Maui.Controls.BindableProperty"/> that indicates when the view is loaded.
+            </summary>
+        </member>
+        <member name="P:Maui.CommunityToolkit.TabView.Compat.BaseLazyView.IsLoaded">
+            <summary>
+            This is a read-only property that indicates when the view is loaded.
+            </summary>
+        </member>
+        <member name="M:Maui.CommunityToolkit.TabView.Compat.BaseLazyView.SetIsLoaded(System.Boolean)">
+            <summary>
+            This method change the value of the <see cref="P:Maui.CommunityToolkit.TabView.Compat.BaseLazyView.IsLoaded"/> property.
+            </summary>
+            <param name="isLoaded"></param>
+        </member>
+        <member name="M:Maui.CommunityToolkit.TabView.Compat.BaseLazyView.LoadViewAsync">
+            <summary>
+            Use this method to do the initialization of the <see cref="T:Microsoft.Maui.Controls.View"/> and change the status IsLoaded value here.
+            </summary>
+            <returns><see cref="T:System.Threading.Tasks.ValueTask"/></returns>
+        </member>
+        <member name="M:Maui.CommunityToolkit.TabView.Compat.BaseLazyView.Dispose">
+            <summary>
+            This method dispose the <see cref="P:Microsoft.Maui.Controls.ContentView.Content"/> if it's <see cref="T:System.IDisposable"/>.
+            </summary>
+        </member>
+        <member name="T:Maui.CommunityToolkit.TabView.Compat.IBadgeAnimation">
+            <summary>
+            You can implement this interface to create your own animations to be used on the <see cref="T:Maui.CommunityToolkit.TabView.Compat.BadgeView"/>. Create an implementation of <see cref="T:Maui.CommunityToolkit.TabView.Compat.IBadgeAnimation"/>, assign the implemenatation to the <see cref="P:Maui.CommunityToolkit.TabView.Compat.BadgeView.BadgeAnimation"/> and set <see cref="P:Maui.CommunityToolkit.TabView.Compat.BadgeView.IsAnimated"/> to true.
+            </summary>
+        </member>
+        <member name="T:Maui.CommunityToolkit.TabView.Compat.LazyView`1">
+            <summary>
+            This a basic implementation of the LazyView based on <see cref="T:Maui.CommunityToolkit.TabView.Compat.BaseLazyView"/> use this an exemple to create yours
+            </summary>
+            <typeparam name="TView">Any <see cref="T:Microsoft.Maui.Controls.View"/></typeparam>
+        </member>
+        <member name="M:Maui.CommunityToolkit.TabView.Compat.LazyView`1.LoadViewAsync">
+            <summary>
+            This method initializes your <see cref="T:Maui.CommunityToolkit.TabView.Compat.LazyView`1"/>.
+            </summary>
+            <returns><see cref="T:System.Threading.Tasks.ValueTask"/></returns>
+        </member>
+        <member name="T:Maui.CommunityToolkit.TabView.Compat.TextCaseConverter">
+            <summary>
+            Converts text (string, char) to certain case as specified with <see cref="P:Maui.CommunityToolkit.TabView.Compat.TextCaseConverter.Type"/> or the parameter of the Convert method.
+            </summary>
+        </member>
+        <member name="P:Maui.CommunityToolkit.TabView.Compat.TextCaseConverter.Type">
+            <summary>
+            The desired text case that the text should be converted to.
+            </summary>
+        </member>
+        <member name="M:Maui.CommunityToolkit.TabView.Compat.TextCaseConverter.Convert(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Converts text (string, char) to certain case.
+            </summary>
+            <param name="value">The text to convert.</param>
+            <param name="targetType">The type of the binding target property. This is not implemented.</param>
+            <param name="parameter">The desired text case that the text should be converted to. Must match <see cref="T:Maui.CommunityToolkit.TabView.Compat.TextCaseType"/> enum value.</param>
+            <param name="culture">The culture to use in the converter. This is not implemented.</param>
+            <returns>The converted text representation with the desired casing.</returns>
+        </member>
+        <member name="M:Maui.CommunityToolkit.TabView.Compat.TextCaseConverter.ConvertBack(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            This method is not implemented and will throw a <see cref="T:System.NotImplementedException"/>.
+            </summary>
+            <param name="value">N/A</param>
+            <param name="targetType">N/A</param>
+            <param name="parameter">N/A</param>
+            <param name="culture">N/A</param>
+            <returns>N/A</returns>
+        </member>
+        <member name="T:Maui.CommunityToolkit.TabView.Compat.TextCaseType">
+            <summary>
+            The text cases that can be used with <see cref="T:Maui.CommunityToolkit.TabView.Compat.TextCaseConverter"/> to convert text to a specific case.
+            </summary>
+        </member>
+        <member name="F:Maui.CommunityToolkit.TabView.Compat.TextCaseType.None">
+            <summary>Should not be converted</summary>
+        </member>
+        <member name="F:Maui.CommunityToolkit.TabView.Compat.TextCaseType.Upper">
+            <summary>Convert to uppercase</summary>
+        </member>
+        <member name="F:Maui.CommunityToolkit.TabView.Compat.TextCaseType.Lower">
+            <summary>Convert to lowercase</summary>
+        </member>
+        <member name="F:Maui.CommunityToolkit.TabView.Compat.TextCaseType.FirstUpperRestLower">
+            <summary>Converts the first letter to upper only</summary>
+        </member>
+    </members>
+</doc>

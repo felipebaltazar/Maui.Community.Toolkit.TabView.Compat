@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>TabView.Compat.Maui</id>
+    <version>8.0.0-pre-g</version>
+    <authors>Felipe Baltazar</authors>
+    <license type="file">LICENSE</license>
+    <licenseUrl>https://aka.ms/deprecateLicenseUrl</licenseUrl>
+    <icon>icon.png</icon>
+    <readme>README.md</readme>
+    <projectUrl>https://github.com/felipebaltazar/Maui.CommunityToolkitTabView</projectUrl>
+    <description>TabView compat version to migrate xamarin apps to maui.</description>
+    <copyright>Copyright Felipe Baltazar 2024</copyright>
+    <tags>CommunityToolkitTabView maui dotnet-maui xaml ios android server tabview ui</tags>
+    <repository type="git" url="https://github.com/felipebaltazar/Maui.CommunityToolkitTabView" />
+    <dependencies>
+      <group targetFramework="net8.0-android34.0">
+        <dependency id="Microsoft.Extensions.Logging.Debug" version="8.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Maui.Controls" version="8.0.82" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Maui.Controls.Compatibility" version="8.0.82" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework="net8.0-ios18.0">
+        <dependency id="Microsoft.Extensions.Logging.Debug" version="8.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Maui.Controls" version="8.0.82" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Maui.Controls.Compatibility" version="8.0.82" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Users\Felipe\source\repos\Maui.CommunityToolkit.TabView.Compat\Maui.CommunityToolkit.TabView.Compat\bin\Debug\net8.0-android\Maui.CommunityToolkit.TabView.Compat.pdb" target="lib\net8.0-android34.0\Maui.CommunityToolkit.TabView.Compat.pdb" />
+    <file src="C:\Users\Felipe\source\repos\Maui.CommunityToolkit.TabView.Compat\Maui.CommunityToolkit.TabView.Compat\bin\Debug\net8.0-ios\Maui.CommunityToolkit.TabView.Compat.pdb" target="lib\net8.0-ios18.0\Maui.CommunityToolkit.TabView.Compat.pdb" />
+  </files>
+</package>
