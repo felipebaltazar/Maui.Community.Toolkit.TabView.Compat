@@ -10,9 +10,9 @@
 
 #pragma warning disable CA2243
 
-[assembly: System.Reflection.AssemblyVersionAttribute("8.0.0.0")]
-[assembly: System.Reflection.AssemblyFileVersionAttribute("8.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("8.0.0-pre")]
+[assembly: System.Reflection.AssemblyVersionAttribute("8.0.1.37982")]
+[assembly: System.Reflection.AssemblyFileVersionAttribute("8.0.1.37982")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("8.0.1-pre+945eb6372c")]
 #if NETSTANDARD || NETFRAMEWORK || NETCOREAPP
 [System.CodeDom.Compiler.GeneratedCode("Nerdbank.GitVersioning.Tasks","3.6.133.12845")]
 #endif
@@ -21,12 +21,14 @@
 #endif
 internal static partial class ThisAssembly {
     internal const string AssemblyConfiguration = "Debug";
-    internal const string AssemblyFileVersion = "8.0";
-    internal const string AssemblyInformationalVersion = "8.0.0-pre";
+    internal const string AssemblyFileVersion = "8.0.1.37982";
+    internal const string AssemblyInformationalVersion = "8.0.1-pre+945eb6372c";
     internal const string AssemblyName = "Maui.CommunityToolkit.TabView.Compat";
     internal const string AssemblyTitle = "Maui.CommunityToolkit.TabView.Compat";
-    internal const string AssemblyVersion = "8.0.0.0";
+    internal const string AssemblyVersion = "8.0.1.37982";
+    internal static readonly System.DateTime GitCommitDate = new System.DateTime(638665375380000000L, System.DateTimeKind.Utc);
+    internal const string GitCommitId = "945eb6372c30368c7c95c45e65cfadaecbbd3593";
     internal const bool IsPrerelease = true;
-    internal const bool IsPublicRelease = false;
+    internal const bool IsPublicRelease = true;
     internal const string RootNamespace = "Maui.CommunityToolkit.TabView.Compat";
 }
