@@ -154,20 +154,38 @@ public class TabView : ContentView, IDisposable
 
     public void Dispose()
     {
-        if (contentContainer != null)
+        try
         {
-            contentContainer.PropertyChanged -= OnContentContainerPropertyChanged;
-            contentContainer.Scrolled -= OnContentContainerScrolled;
+
+            if (contentContainer != null)
+            {
+                contentContainer.PropertyChanged -= OnContentContainerPropertyChanged;
+                contentContainer.Scrolled -= OnContentContainerScrolled;
+            }
         }
+        catch (Exception _) { }
 
-        if (tabItemsSource is INotifyCollectionChanged notifyTabItemsSource)
-            notifyTabItemsSource.CollectionChanged -= OnTabItemsSourceCollectionChanged;
+        try
+        {
+            if (tabItemsSource is INotifyCollectionChanged notifyTabItemsSource)
+                notifyTabItemsSource.CollectionChanged -= OnTabItemsSourceCollectionChanged;
+        }
+        catch (Exception _) { }
 
-        if (TabItems != null)
-            TabItems.CollectionChanged -= OnTabItemsCollectionChanged;
+        try
+        {
+            if (TabItems != null)
+                TabItems.CollectionChanged -= OnTabItemsCollectionChanged;
 
-        var lazyView = (contentContainer?.CurrentItem as TabViewItem)?.Content as BaseLazyView ?? TabItems?[SelectedIndex].Content as BaseLazyView;
-        lazyView?.Dispose();
+        }
+        catch (Exception _) { }
+
+        try
+        {
+            var lazyView = (contentContainer?.CurrentItem as TabViewItem)?.Content as BaseLazyView ?? TabItems?[SelectedIndex].Content as BaseLazyView;
+            lazyView?.Dispose();
+        }
+        catch (Exception _) { }
     }
 
     public ObservableCollection<TabViewItem> TabItems { get; set; }

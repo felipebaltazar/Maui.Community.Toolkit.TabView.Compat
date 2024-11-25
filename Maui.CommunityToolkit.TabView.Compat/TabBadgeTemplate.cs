@@ -9,10 +9,8 @@ public class TabBadgeTemplate : Grid
         HorizontalOptions = LayoutOptions.Start;
         VerticalOptions = LayoutOptions.Start;
 
-        var badgeBorder = new Frame
+        var badgeBorder = new Border
         {
-            HasShadow = false,
-            IsClippedToBounds = false,
             Padding = 2,
             Margin = 6
         };
