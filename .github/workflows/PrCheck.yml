@@ -48,11 +48,6 @@ jobs:
       with:
         fetch-depth: 0
 
-    - name: Initialize CodeQL
-      uses: github/codeql-action/init@v3
-      with:
-        languages: ${{ matrix.language }}
-
     - name: Setup .NET Core
       uses: actions/setup-dotnet@v4
       with:
