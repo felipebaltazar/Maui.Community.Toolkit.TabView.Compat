@@ -1,4 +1,5 @@
-﻿using System.ComponentModel;
+﻿using Microsoft.Maui.Controls.Shapes;
+using System.ComponentModel;
 using System.Runtime.CompilerServices;
 
 namespace Maui.CommunityToolkit.TabView.Compat;
@@ -8,7 +9,7 @@ public class TabBadgeView : TemplatedView
     internal const string ElementBorder = "PART_Border";
     internal const string ElementText = "PART_Text";
 
-    Frame? badgeBorder;
+    Border? badgeBorder;
     Label? badgeText;
     bool isVisible;
 
@@ -108,13 +109,16 @@ public class TabBadgeView : TemplatedView
     protected override void OnApplyTemplate()
     {
         base.OnApplyTemplate();
+        try
+        {
+            badgeBorder = (Border)GetTemplateChild(ElementBorder);
+            badgeText = (Label)GetTemplateChild(ElementText);
 
-        badgeBorder = (Frame)GetTemplateChild(ElementBorder);
-        badgeText = (Label)GetTemplateChild(ElementText);
-
-        UpdateSize();
-        UpdatePosition(badgeBorder);
-        UpdateIsEnabled(badgeText);
+            UpdateSize();
+            UpdatePosition(badgeBorder);
+            UpdateIsEnabled(badgeText);
+        }
+        catch (Exception _) { }
     }
 
     protected override void OnPropertyChanged([CallerMemberName] string propertyName = "")
@@ -135,7 +139,7 @@ public class TabBadgeView : TemplatedView
 
     void OnBadgeTextPropertyChanged(object? sender, PropertyChangedEventArgs e)
     {
-        if (e.PropertyName is nameof(Height) or nameof(Width) && badgeBorder is Frame frame)
+        if (e.PropertyName is nameof(Height) or nameof(Width) && badgeBorder is Border frame)
         {
             UpdateSize();
             UpdatePosition(frame);
@@ -153,10 +157,13 @@ public class TabBadgeView : TemplatedView
         badgeBorder.HeightRequest = badgeTextHeight;
         badgeBorder.WidthRequest = badgeTextWidth;
 
-        badgeBorder.CornerRadius = (int)Math.Round(badgeTextHeight / 2);
+        badgeBorder.StrokeShape = new RoundRectangle
+        {
+            CornerRadius = new CornerRadius((int)Math.Round(badgeTextHeight / 2))
+        };
     }
 
-    void UpdatePosition(Frame badgeBorder)
+    void UpdatePosition(Border badgeBorder)
     {
         if (PlacementTarget == null)
             return;
@@ -178,7 +185,7 @@ public class TabBadgeView : TemplatedView
     void UpdateBorderColor(Color borderColor)
     {
         if (badgeBorder != null)
-            badgeBorder.BorderColor = borderColor;
+            badgeBorder.Stroke = borderColor;
     }
 
     void UpdateTextColor(Color textColor)
