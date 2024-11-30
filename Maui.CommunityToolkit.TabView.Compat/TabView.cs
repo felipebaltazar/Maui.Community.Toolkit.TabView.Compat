@@ -551,7 +551,7 @@ public class TabView : ContentView, IDisposable
 
         AddTabViewItemToTabStrip(tabViewItem, index);
 
-        UpdateTabContentSize();
+       // UpdateTabContentSize();
         UpdateTabStripSize();
 
         if (SelectedIndex != 0)
@@ -777,7 +777,7 @@ public class TabView : ContentView, IDisposable
 
         var newPosition = position;
 
-        Device.BeginInvokeOnMainThread(async () =>
+        MainThread.BeginInvokeOnMainThread(async () =>
         {
             if (contentTabItems == null || contentTabItems.Count != TabItems.Count)
                 contentTabItems = new ObservableCollection<TabViewItem>(TabItems.Where(t => t.Content != null));
